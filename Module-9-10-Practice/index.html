@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- Project Input form -->
+		<form
+			action=""
+			method="post"
+			name="postForm"
+			id="postForm"
+		>
+			<label for="projectTitle">Project Title : </label>
+			<input
+				type="text"
+				id="projectTitle"
+			/><br /><br />
+
+			<label for="projectDesc">Project Description : </label>
+			<input
+				type="text"
+				id="projectDesc"
+			/><br /><br />
+
+			<label for="numOfpeople">Number of People : </label>
+			<input
+				type="number"
+				id="numOfpeople"
+			/><br /><br />
+			<input
+				type="submit"
+				value="Add"
+				id="addProjectBtn"
+			/>
+		</form>
+
+		<h2>Projects</h2>
+
+		<div id="list"></div>
+		<template id="project-list">
+			<section class="finished-projects">
+				<ul></ul>
+			</section>
+		</template>
+		<script src="app.js"></script>
+	</body>
+</html>
